@@ -1,1 +1,1 @@
-# m2-vagrant
+# Simple Magento 2 Vagrant - WIP
