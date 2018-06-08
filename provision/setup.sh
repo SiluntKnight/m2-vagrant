@@ -16,13 +16,11 @@ service nginx restart > /dev/null
 
 echo "Updating PHP repository"
 apt-get install python-software-properties build-essential -y > /dev/null
-add-apt-repository ppa:ondrej/php5 -y > /dev/null
+add-apt-repository ppa:ondrej/php -y > /dev/null
 apt-get update > /dev/null
 
 echo "Installing PHP"
-add-apt-repository ppa:ondrej/php
-apt-get -y update
-apt-get install -y php7.0 libapache2-mod-php7.0 php7.0 php7.0-common php7.0-gd php7.0-mysql php7.0-mcrypt php7.0-curl php7.0-intl php7.0-xsl php7.0-mbstring php7.0-zip php7.0-bcmath php7.0-iconv php7.0-soap
+apt-get install -y php7.0 libapache2-mod-php7.0 php7.0 php7.0-common php7.0-gd php7.0-mysql php7.0-mcrypt php7.0-curl php7.0-intl php7.0-xsl php7.0-mbstring php7.0-zip php7.0-bcmath php7.0-iconv php7.0-soap > /dev/null
 
 echo "Prepping MySQL"
 apt-get install debconf-utils -y > /dev/null
