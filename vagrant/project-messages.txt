@@ -1,0 +1,7 @@
+--------------------
+Project: M2 Learning
+--------------------
+
+Check out this project's wiki in Github.
+
+Please leave any project messages in this file: vagrant/project-messages.txt
